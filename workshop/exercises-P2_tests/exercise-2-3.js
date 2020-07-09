@@ -9,7 +9,8 @@
 //   - `typeof 3` returns 'number')
 
 function sumDigits(input) {
-  // Your code here
+  sumofIndexes = input[0] + input[1];
+  return sumofIndexes;
 }
 
 // Add 5 more test cases here! 7 total
@@ -23,7 +24,7 @@ expect(sumDigits([-1, 0]), -1);
  */
 function expect(result, value) {
   if (result === value) {
-    console.log('✅ Test succeeded');
+    console.log("✅ Test succeeded");
   } else {
     console.log(`⛔️ Expected “${result}” to equal “${value}”`);
   }
