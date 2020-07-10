@@ -19,6 +19,7 @@ These exercises aim to introduce you to testing.
 You can run the files in the debugger.
 
 1. Open the terminal/Debug Console with `ctrl+j` (win) or `cmd+j` (mac).
+
 2. Open the `js` file you want to debug.
 3. Select the debugger icon from the sidebar.
 4. Click the `Run and Debug` button.
