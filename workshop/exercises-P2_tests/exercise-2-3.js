@@ -21,7 +21,11 @@ function sumDigits(input) {
 expect(sumDigits([2, 5]), 7);
 expect(sumDigits([-1, 0]), -1);
 
-expect(sumDigits([-1, 0, 4]), -1);
+expect(sumDigits([-5, 2]), -3);
+expect(sumDigits([-14, 4]), -10);
+expect(sumDigits([-15, "arrow", 4]), undefined);
+expect(sumDigits([-11, 4]), -7);
+expect(sumDigits([2, 4]), 6);
 
 /**
  * -------------------------------------------------------------------

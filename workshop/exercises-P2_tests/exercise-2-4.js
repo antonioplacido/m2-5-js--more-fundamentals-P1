@@ -10,10 +10,12 @@
 // getLetterAtIndex("abc", 0);   // a
 
 function getLetterAtIndex(str, index) {
-  if (str === "") {
+  let phrase = str;
+  let position = str.charAt(index);
+  if (str.charAt(index) === "") {
     return undefined;
   } else {
-    return str.charAt(index);
+    return position;
   }
 }
 
@@ -23,10 +25,11 @@ expect(getLetterAtIndex("nobody", 0), "n");
 expect(getLetterAtIndex("hello", 4), "o");
 expect(getLetterAtIndex("goodbye", 0), "g");
 expect(getLetterAtIndex("hello", 4), "o");
-expect(getLetterAtIndex("goodbye", 2), "l");
-expect(getLetterAtIndex("hello", 6), "o");
-expect(getLetterAtIndex("goodbye", 1), "g");
+expect(getLetterAtIndex("goodbye", 2), "o");
+expect(getLetterAtIndex("hello", 6), undefined);
+expect(getLetterAtIndex("goodbye", 1), "o");
 
+console.log(getLetterAtIndex("hello", 4));
 /**
  * -------------------------------------------------------------------
  * ⚠️ No changes necessary below. ⚠️
